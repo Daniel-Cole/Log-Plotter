@@ -1,0 +1,35 @@
+<div class="graph-div">
+    <div class="row">
+        <div class="remove-btn-div col-xs-6">
+            <button onclick="remove_button(this)" class="btn btn-danger btn-lg remove-graph-btn">
+                <span class="glyphicon glyphicon-remove"></span> Remove Graph
+            </button>
+        </div>
+        <div class="col-xs-6 align-right">
+            {% if groupby %}
+            <div class="group-by-div">
+                <div class="btn-group">
+                    <a type="label" class="btn no-hover btn-default">Group By</a>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        {% for group in groupby %}
+                        <li class="selector-li groupby-selector">
+                            <a onclick="load_graph(this)">{{group}}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% autoescape off %} {{graph}} {% endautoescape %} {% if title %}
+    <div class="graph-misc">
+        <h3> <strong> {{title}} </strong> </h3>
+        <p> Start Date: {{start_date}} </br> End Date: {{end_date}} </p>
+        <p> {{graph_info|linebreaks}} </p>
+    </div>
+    {% endif %}
+</div>

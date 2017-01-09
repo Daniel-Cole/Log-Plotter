@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- third party imports - bootstrap, jquery, plotly -->
+    <script src="{% static "vendor/js/jquery-3.1.1.min.js" %}">
+    </script>
+    <script src="{% static "vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js" %}">
+    </script>
+    <script src="{% static "vendor/js/plotly-latest.min.js" %}">
+    </script>
+    <script src="{% static "vendor/js/moment.min.js" %}">
+    </script>
+    <script src="{% static "vendor/js/bootstrap-datetimepicker.min.js" %}">
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="{% static "vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "vendor/css/bootstrap-datetimepicker.min.css" %}">
+    <!-- custom dashboard css/js -->
+    <link rel="stylesheet" type="text/css" href="{% static "css/dashboard.css" %}">
+    <script src="{% static "js/dashboard.js" %}">
+    </script>
+    <title>MyMSD Log Plotter</title>
+</head>
+
+<body>
+    {% block content %}{% endblock content %}
+    <div class="modal"></div>
+</body>
+
+</html>

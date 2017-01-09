@@ -1,0 +1,224 @@
+#end-date-label {
+    padding-right: 17px;
+}
+
+.alert-danger {
+    margin: 0px;
+}
+
+.ctrl-button {
+    min-width: 300px;
+    width: 50%;
+}
+
+.label-row {
+    margin: 0 auto;
+    width: 50%;
+    min-width: 300px;
+    max-width: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ctrl-button-parent {
+    width: 90%;
+}
+
+.ctrl-button-child {
+    width: 10%;
+}
+
+.ctrl-btn {
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.hide-btn {
+    text-align: right;
+}
+
+#load-graph-btn {
+    width: 100%;
+}
+
+.btn-default {
+    background: #ECF0F1;
+}
+
+#current-graph-label {
+    height: 100%;
+    display: block;
+    font-size: 22px;
+}
+
+.date-selector {
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    width: 50%
+}
+
+.selector-li {
+    cursor: pointer;
+}
+
+.control-panel {
+    min-width: 350px;
+    border: solid 1px #DDD;
+    border-radius: 10px;
+    background: white;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.dropdown-menu {
+    width: 100%;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    width: 50%;
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+h3 {
+    margin-top: 0px;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.modal {
+    display: hidden;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba( 255, 255, 255, .8) url('/static/loading-symbol.gif') 50% 50% no-repeat;
+}
+
+.display-msg {
+    margin-left: 10px;
+    width: 510px;
+}
+
+.left-blob {
+    margin-left: 5px;
+}
+
+.page-blob {
+    min-width: 320px;
+    text-align: center;
+    border: solid 1px #DDD;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.info-blob {
+    text-align: left;
+}
+
+.info-blob-wide {
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.graph-area {
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.graph-div {
+    border: 1px solid #ddd;
+    background-color: #FFF;
+    border-radius: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 95%;
+}
+
+.graph-misc {
+    text-align: left;
+    padding-left: 10px
+}
+
+.remove-btn-div {
+    text-align: left;
+}
+
+.remove-graph-btn {
+    margin: 10px;
+}
+
+.title {
+    padding-left: 10px;
+}
+
+.search-graph {
+    padding-left: 10px;
+    width: 20%;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.group-by-div {
+    padding: 10px;
+}
